@@ -1,0 +1,412 @@
+{
+  "contract_fingerprint": "e3fd4c744ae8933c0e0bd0c21a692897795a14657e577fb82108500d39f2ac8d",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "dev.omniwrap.generated:boxfleet-hosted-control-plane-boxfleet-io-e583ffd0d9df-sdk:0.3.0",
+        "ecosystem": "Maven",
+        "entry": "dev.omniwrap.boxfleet.hosted.control.plane.boxfleet.io.apie583ffd0d9df.sdk.ApiClient",
+        "import": "import dev.omniwrap.boxfleet.hosted.control.plane.boxfleet.io.apie583ffd0d9df.sdk.ApiClient;"
+      },
+      "operations": {
+        "cancelJob": {
+          "member": "jobs().cancel",
+          "method": "POST",
+          "path": "/v1/jobs/{jobId}/cancel",
+          "resource": "jobs()",
+          "signature": "public Void cancel(String jobId)\npublic CompletableFuture<Void> cancelAsync(String jobId)\npublic ApiResponse<Void> cancelWithResponse(String jobId)\npublic CompletableFuture<ApiResponse<Void>> cancelWithResponseAsync(String jobId)\npublic Void cancel(String jobId, RequestOptions requestOptions)\npublic CompletableFuture<Void> cancelAsync(String jobId, RequestOptions requestOptions)\npublic ApiResponse<Void> cancelWithResponse(String jobId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> cancelWithResponseAsync(String jobId, RequestOptions requestOptions)"
+        },
+        "closeHostedWorkspace": {
+          "member": "workspaces().closeHosted",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/close",
+          "resource": "workspaces()",
+          "signature": "public Void closeHosted(String workspaceId)\npublic CompletableFuture<Void> closeHostedAsync(String workspaceId)\npublic ApiResponse<Void> closeHostedWithResponse(String workspaceId)\npublic CompletableFuture<ApiResponse<Void>> closeHostedWithResponseAsync(String workspaceId)\npublic Void closeHosted(String workspaceId, RequestOptions requestOptions)\npublic CompletableFuture<Void> closeHostedAsync(String workspaceId, RequestOptions requestOptions)\npublic ApiResponse<Void> closeHostedWithResponse(String workspaceId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> closeHostedWithResponseAsync(String workspaceId, RequestOptions requestOptions)"
+        },
+        "closePersistentBox": {
+          "member": "organizations().closePersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/close",
+          "resource": "organizations()",
+          "signature": "public HostedPersistentBoxClose closePersistentBox(String organizationId, String boxId)\npublic CompletableFuture<HostedPersistentBoxClose> closePersistentBoxAsync(String organizationId, String boxId)\npublic ApiResponse<HostedPersistentBoxClose> closePersistentBoxWithResponse(String organizationId, String boxId)\npublic CompletableFuture<ApiResponse<HostedPersistentBoxClose>> closePersistentBoxWithResponseAsync(String organizationId, String boxId)\npublic HostedPersistentBoxClose closePersistentBox(String organizationId, String boxId, RequestOptions requestOptions)\npublic CompletableFuture<HostedPersistentBoxClose> closePersistentBoxAsync(String organizationId, String boxId, RequestOptions requestOptions)\npublic ApiResponse<HostedPersistentBoxClose> closePersistentBoxWithResponse(String organizationId, String boxId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<HostedPersistentBoxClose>> closePersistentBoxWithResponseAsync(String organizationId, String boxId, RequestOptions requestOptions)"
+        },
+        "controlUser": {
+          "member": "admin().controlUser",
+          "method": "POST",
+          "path": "/v1/admin/users",
+          "resource": "admin()",
+          "signature": "public Void controlUser(Map<String, Object> body)\npublic CompletableFuture<Void> controlUserAsync(Map<String, Object> body)\npublic ApiResponse<Void> controlUserWithResponse(Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> controlUserWithResponseAsync(Map<String, Object> body)\npublic Void controlUser(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> controlUserAsync(Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> controlUserWithResponse(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> controlUserWithResponseAsync(Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "createBillingPortal": {
+          "member": "organizations().createBillingPortal",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/billing/portal",
+          "resource": "organizations()",
+          "signature": "public Void createBillingPortal(String organizationId)\npublic CompletableFuture<Void> createBillingPortalAsync(String organizationId)\npublic ApiResponse<Void> createBillingPortalWithResponse(String organizationId)\npublic CompletableFuture<ApiResponse<Void>> createBillingPortalWithResponseAsync(String organizationId)\npublic Void createBillingPortal(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<Void> createBillingPortalAsync(String organizationId, RequestOptions requestOptions)\npublic ApiResponse<Void> createBillingPortalWithResponse(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> createBillingPortalWithResponseAsync(String organizationId, RequestOptions requestOptions)"
+        },
+        "createBox": {
+          "member": "organizations().createBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/boxes",
+          "resource": "organizations()",
+          "signature": "public Void createBox(String organizationId, Map<String, Object> body)\npublic CompletableFuture<Void> createBoxAsync(String organizationId, Map<String, Object> body)\npublic ApiResponse<Void> createBoxWithResponse(String organizationId, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> createBoxWithResponseAsync(String organizationId, Map<String, Object> body)\npublic Void createBox(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> createBoxAsync(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> createBoxWithResponse(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> createBoxWithResponseAsync(String organizationId, Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "createCheckout": {
+          "member": "organizations().createCheckout",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/billing/checkout",
+          "resource": "organizations()",
+          "signature": "public Void createCheckout(String organizationId, Map<String, Object> body)\npublic CompletableFuture<Void> createCheckoutAsync(String organizationId, Map<String, Object> body)\npublic ApiResponse<Void> createCheckoutWithResponse(String organizationId, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> createCheckoutWithResponseAsync(String organizationId, Map<String, Object> body)\npublic Void createCheckout(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> createCheckoutAsync(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> createCheckoutWithResponse(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> createCheckoutWithResponseAsync(String organizationId, Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "getAccountsConfig": {
+          "member": "accounts().getConfig",
+          "method": "GET",
+          "path": "/v1/accounts/config",
+          "resource": "accounts()",
+          "signature": "public Void getConfig()\npublic CompletableFuture<Void> getConfigAsync()\npublic ApiResponse<Void> getConfigWithResponse()\npublic CompletableFuture<ApiResponse<Void>> getConfigWithResponseAsync()\npublic Void getConfig(RequestOptions requestOptions)\npublic CompletableFuture<Void> getConfigAsync(RequestOptions requestOptions)\npublic ApiResponse<Void> getConfigWithResponse(RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> getConfigWithResponseAsync(RequestOptions requestOptions)"
+        },
+        "getAdminConsole": {
+          "member": "admin().getConsole",
+          "method": "GET",
+          "path": "/v1/admin/console",
+          "resource": "admin()",
+          "signature": "public Void getConsole()\npublic CompletableFuture<Void> getConsoleAsync()\npublic ApiResponse<Void> getConsoleWithResponse()\npublic CompletableFuture<ApiResponse<Void>> getConsoleWithResponseAsync()\npublic Void getConsole(RequestOptions requestOptions)\npublic CompletableFuture<Void> getConsoleAsync(RequestOptions requestOptions)\npublic ApiResponse<Void> getConsoleWithResponse(RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> getConsoleWithResponseAsync(RequestOptions requestOptions)"
+        },
+        "getAdminPlans": {
+          "member": "admin().getPlans",
+          "method": "GET",
+          "path": "/v1/admin/plans",
+          "resource": "admin()",
+          "signature": "public Void getPlans()\npublic CompletableFuture<Void> getPlansAsync()\npublic ApiResponse<Void> getPlansWithResponse()\npublic CompletableFuture<ApiResponse<Void>> getPlansWithResponseAsync()\npublic Void getPlans(RequestOptions requestOptions)\npublic CompletableFuture<Void> getPlansAsync(RequestOptions requestOptions)\npublic ApiResponse<Void> getPlansWithResponse(RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> getPlansWithResponseAsync(RequestOptions requestOptions)"
+        },
+        "getAuthGate": {
+          "member": "auth().getGate",
+          "method": "GET",
+          "path": "/v1/auth/gate",
+          "resource": "auth()",
+          "signature": "public Void getGate()\npublic CompletableFuture<Void> getGateAsync()\npublic ApiResponse<Void> getGateWithResponse()\npublic CompletableFuture<ApiResponse<Void>> getGateWithResponseAsync()\npublic Void getGate(RequestOptions requestOptions)\npublic CompletableFuture<Void> getGateAsync(RequestOptions requestOptions)\npublic ApiResponse<Void> getGateWithResponse(RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> getGateWithResponseAsync(RequestOptions requestOptions)"
+        },
+        "getBilling": {
+          "member": "organizations().getBilling",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/billing",
+          "resource": "organizations()",
+          "signature": "public Void getBilling(String organizationId)\npublic CompletableFuture<Void> getBillingAsync(String organizationId)\npublic ApiResponse<Void> getBillingWithResponse(String organizationId)\npublic CompletableFuture<ApiResponse<Void>> getBillingWithResponseAsync(String organizationId)\npublic Void getBilling(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<Void> getBillingAsync(String organizationId, RequestOptions requestOptions)\npublic ApiResponse<Void> getBillingWithResponse(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> getBillingWithResponseAsync(String organizationId, RequestOptions requestOptions)"
+        },
+        "getBox": {
+          "member": "organizations().getBox",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/boxes/{boxId}",
+          "resource": "organizations()",
+          "signature": "public Void getBox(String organizationId, String boxId)\npublic CompletableFuture<Void> getBoxAsync(String organizationId, String boxId)\npublic ApiResponse<Void> getBoxWithResponse(String organizationId, String boxId)\npublic CompletableFuture<ApiResponse<Void>> getBoxWithResponseAsync(String organizationId, String boxId)\npublic Void getBox(String organizationId, String boxId, RequestOptions requestOptions)\npublic CompletableFuture<Void> getBoxAsync(String organizationId, String boxId, RequestOptions requestOptions)\npublic ApiResponse<Void> getBoxWithResponse(String organizationId, String boxId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> getBoxWithResponseAsync(String organizationId, String boxId, RequestOptions requestOptions)"
+        },
+        "getEntitlements": {
+          "member": "organizations().getEntitlements",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/entitlements",
+          "resource": "organizations()",
+          "signature": "public Void getEntitlements(String organizationId)\npublic CompletableFuture<Void> getEntitlementsAsync(String organizationId)\npublic ApiResponse<Void> getEntitlementsWithResponse(String organizationId)\npublic CompletableFuture<ApiResponse<Void>> getEntitlementsWithResponseAsync(String organizationId)\npublic Void getEntitlements(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<Void> getEntitlementsAsync(String organizationId, RequestOptions requestOptions)\npublic ApiResponse<Void> getEntitlementsWithResponse(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> getEntitlementsWithResponseAsync(String organizationId, RequestOptions requestOptions)"
+        },
+        "getFleet": {
+          "member": "organizations().getFleet",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/fleet",
+          "resource": "organizations()",
+          "signature": "public Void getFleet(String organizationId)\npublic CompletableFuture<Void> getFleetAsync(String organizationId)\npublic ApiResponse<Void> getFleetWithResponse(String organizationId)\npublic CompletableFuture<ApiResponse<Void>> getFleetWithResponseAsync(String organizationId)\npublic Void getFleet(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<Void> getFleetAsync(String organizationId, RequestOptions requestOptions)\npublic ApiResponse<Void> getFleetWithResponse(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> getFleetWithResponseAsync(String organizationId, RequestOptions requestOptions)"
+        },
+        "getFleetPolicy": {
+          "member": "organizations().getFleetPolicy",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/fleet/policy",
+          "resource": "organizations()",
+          "signature": "public Void getFleetPolicy(String organizationId)\npublic CompletableFuture<Void> getFleetPolicyAsync(String organizationId)\npublic ApiResponse<Void> getFleetPolicyWithResponse(String organizationId)\npublic CompletableFuture<ApiResponse<Void>> getFleetPolicyWithResponseAsync(String organizationId)\npublic Void getFleetPolicy(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<Void> getFleetPolicyAsync(String organizationId, RequestOptions requestOptions)\npublic ApiResponse<Void> getFleetPolicyWithResponse(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> getFleetPolicyWithResponseAsync(String organizationId, RequestOptions requestOptions)"
+        },
+        "getHealth": {
+          "member": "health().get",
+          "method": "GET",
+          "path": "/health",
+          "resource": "health()",
+          "signature": "public Void get()\npublic CompletableFuture<Void> getAsync()\npublic ApiResponse<Void> getWithResponse()\npublic CompletableFuture<ApiResponse<Void>> getWithResponseAsync()\npublic Void get(RequestOptions requestOptions)\npublic CompletableFuture<Void> getAsync(RequestOptions requestOptions)\npublic ApiResponse<Void> getWithResponse(RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> getWithResponseAsync(RequestOptions requestOptions)"
+        },
+        "getHostedWorkspace": {
+          "member": "workspaces().getHosted",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}",
+          "resource": "workspaces()",
+          "signature": "public Void getHosted(String workspaceId)\npublic CompletableFuture<Void> getHostedAsync(String workspaceId)\npublic ApiResponse<Void> getHostedWithResponse(String workspaceId)\npublic CompletableFuture<ApiResponse<Void>> getHostedWithResponseAsync(String workspaceId)\npublic Void getHosted(String workspaceId, RequestOptions requestOptions)\npublic CompletableFuture<Void> getHostedAsync(String workspaceId, RequestOptions requestOptions)\npublic ApiResponse<Void> getHostedWithResponse(String workspaceId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> getHostedWithResponseAsync(String workspaceId, RequestOptions requestOptions)"
+        },
+        "getHostedWorkspaceOperation": {
+          "member": "workspaces().getHostedOperation",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}/operations/{operationId}",
+          "resource": "workspaces()",
+          "signature": "public Void getHostedOperation(String workspaceId, String operationId)\npublic CompletableFuture<Void> getHostedOperationAsync(String workspaceId, String operationId)\npublic ApiResponse<Void> getHostedOperationWithResponse(String workspaceId, String operationId)\npublic CompletableFuture<ApiResponse<Void>> getHostedOperationWithResponseAsync(String workspaceId, String operationId)\npublic Void getHostedOperation(String workspaceId, String operationId, RequestOptions requestOptions)\npublic CompletableFuture<Void> getHostedOperationAsync(String workspaceId, String operationId, RequestOptions requestOptions)\npublic ApiResponse<Void> getHostedOperationWithResponse(String workspaceId, String operationId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> getHostedOperationWithResponseAsync(String workspaceId, String operationId, RequestOptions requestOptions)"
+        },
+        "getHostedWorkspaceSource": {
+          "member": "workspaces().getHostedSource",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}/source",
+          "resource": "workspaces()",
+          "signature": "public Void getHostedSource(String workspaceId)\npublic CompletableFuture<Void> getHostedSourceAsync(String workspaceId)\npublic ApiResponse<Void> getHostedSourceWithResponse(String workspaceId)\npublic CompletableFuture<ApiResponse<Void>> getHostedSourceWithResponseAsync(String workspaceId)\npublic Void getHostedSource(String workspaceId, RequestOptions requestOptions)\npublic CompletableFuture<Void> getHostedSourceAsync(String workspaceId, RequestOptions requestOptions)\npublic ApiResponse<Void> getHostedSourceWithResponse(String workspaceId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> getHostedSourceWithResponseAsync(String workspaceId, RequestOptions requestOptions)"
+        },
+        "getJob": {
+          "member": "jobs().get",
+          "method": "GET",
+          "path": "/v1/jobs/{jobId}",
+          "resource": "jobs()",
+          "signature": "public Void get(String jobId)\npublic CompletableFuture<Void> getAsync(String jobId)\npublic ApiResponse<Void> getWithResponse(String jobId)\npublic CompletableFuture<ApiResponse<Void>> getWithResponseAsync(String jobId)\npublic Void get(String jobId, RequestOptions requestOptions)\npublic CompletableFuture<Void> getAsync(String jobId, RequestOptions requestOptions)\npublic ApiResponse<Void> getWithResponse(String jobId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> getWithResponseAsync(String jobId, RequestOptions requestOptions)"
+        },
+        "getPersistentBox": {
+          "member": "organizations().getPersistentBox",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}",
+          "resource": "organizations()",
+          "signature": "public Map<String, Object> getPersistentBox(String organizationId, String boxId)\npublic CompletableFuture<Map<String, Object>> getPersistentBoxAsync(String organizationId, String boxId)\npublic ApiResponse<Map<String, Object>> getPersistentBoxWithResponse(String organizationId, String boxId)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> getPersistentBoxWithResponseAsync(String organizationId, String boxId)\npublic Map<String, Object> getPersistentBox(String organizationId, String boxId, RequestOptions requestOptions)\npublic CompletableFuture<Map<String, Object>> getPersistentBoxAsync(String organizationId, String boxId, RequestOptions requestOptions)\npublic ApiResponse<Map<String, Object>> getPersistentBoxWithResponse(String organizationId, String boxId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> getPersistentBoxWithResponseAsync(String organizationId, String boxId, RequestOptions requestOptions)"
+        },
+        "getPersistentBoxProviderUsage": {
+          "member": "organizations().getPersistentBoxProviderUsage",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/usage",
+          "resource": "organizations()",
+          "signature": "public Map<String, Object> getPersistentBoxProviderUsage(String organizationId, String boxId, String from, String to)\npublic CompletableFuture<Map<String, Object>> getPersistentBoxProviderUsageAsync(String organizationId, String boxId, String from, String to)\npublic ApiResponse<Map<String, Object>> getPersistentBoxProviderUsageWithResponse(String organizationId, String boxId, String from, String to)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> getPersistentBoxProviderUsageWithResponseAsync(String organizationId, String boxId, String from, String to)\npublic Map<String, Object> getPersistentBoxProviderUsage(String organizationId, String boxId, String from, String to, RequestOptions requestOptions)\npublic CompletableFuture<Map<String, Object>> getPersistentBoxProviderUsageAsync(String organizationId, String boxId, String from, String to, RequestOptions requestOptions)\npublic ApiResponse<Map<String, Object>> getPersistentBoxProviderUsageWithResponse(String organizationId, String boxId, String from, String to, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> getPersistentBoxProviderUsageWithResponseAsync(String organizationId, String boxId, String from, String to, RequestOptions requestOptions)"
+        },
+        "getPlans": {
+          "member": "plans().get",
+          "method": "GET",
+          "path": "/v1/plans",
+          "resource": "plans()",
+          "signature": "public Void get()\npublic CompletableFuture<Void> getAsync()\npublic ApiResponse<Void> getWithResponse()\npublic CompletableFuture<ApiResponse<Void>> getWithResponseAsync()\npublic Void get(RequestOptions requestOptions)\npublic CompletableFuture<Void> getAsync(RequestOptions requestOptions)\npublic ApiResponse<Void> getWithResponse(RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> getWithResponseAsync(RequestOptions requestOptions)"
+        },
+        "ingestTelemetry": {
+          "member": "telemetry().ingest",
+          "method": "POST",
+          "path": "/v1/telemetry/ingest",
+          "resource": "telemetry()",
+          "signature": "public Void ingest(Map<String, Object> body)\npublic CompletableFuture<Void> ingestAsync(Map<String, Object> body)\npublic ApiResponse<Void> ingestWithResponse(Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> ingestWithResponseAsync(Map<String, Object> body)\npublic Void ingest(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> ingestAsync(Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> ingestWithResponse(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> ingestWithResponseAsync(Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "listBoxes": {
+          "member": "organizations().listBoxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/boxes",
+          "resource": "organizations()",
+          "signature": "public Void listBoxes(String organizationId)\npublic CompletableFuture<Void> listBoxesAsync(String organizationId)\npublic ApiResponse<Void> listBoxesWithResponse(String organizationId)\npublic CompletableFuture<ApiResponse<Void>> listBoxesWithResponseAsync(String organizationId)\npublic Void listBoxes(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<Void> listBoxesAsync(String organizationId, RequestOptions requestOptions)\npublic ApiResponse<Void> listBoxesWithResponse(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> listBoxesWithResponseAsync(String organizationId, RequestOptions requestOptions)"
+        },
+        "listHostedWorkspaces": {
+          "member": "workspaces().listHosted",
+          "method": "GET",
+          "path": "/v1/workspaces",
+          "resource": "workspaces()",
+          "signature": "public Void listHosted()\npublic CompletableFuture<Void> listHostedAsync()\npublic ApiResponse<Void> listHostedWithResponse()\npublic CompletableFuture<ApiResponse<Void>> listHostedWithResponseAsync()\npublic Void listHosted(RequestOptions requestOptions)\npublic CompletableFuture<Void> listHostedAsync(RequestOptions requestOptions)\npublic ApiResponse<Void> listHostedWithResponse(RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> listHostedWithResponseAsync(RequestOptions requestOptions)"
+        },
+        "listInvoices": {
+          "member": "organizations().listInvoices",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/billing/invoices",
+          "resource": "organizations()",
+          "signature": "public Void listInvoices(String organizationId)\npublic CompletableFuture<Void> listInvoicesAsync(String organizationId)\npublic ApiResponse<Void> listInvoicesWithResponse(String organizationId)\npublic CompletableFuture<ApiResponse<Void>> listInvoicesWithResponseAsync(String organizationId)\npublic Void listInvoices(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<Void> listInvoicesAsync(String organizationId, RequestOptions requestOptions)\npublic ApiResponse<Void> listInvoicesWithResponse(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> listInvoicesWithResponseAsync(String organizationId, RequestOptions requestOptions)"
+        },
+        "listJobEvents": {
+          "member": "jobs().listEvents",
+          "method": "GET",
+          "path": "/v1/jobs/{jobId}/events",
+          "resource": "jobs()",
+          "signature": "public Void listEvents(String jobId)\npublic CompletableFuture<Void> listEventsAsync(String jobId)\npublic ApiResponse<Void> listEventsWithResponse(String jobId)\npublic CompletableFuture<ApiResponse<Void>> listEventsWithResponseAsync(String jobId)\npublic Void listEvents(String jobId, RequestOptions requestOptions)\npublic CompletableFuture<Void> listEventsAsync(String jobId, RequestOptions requestOptions)\npublic ApiResponse<Void> listEventsWithResponse(String jobId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> listEventsWithResponseAsync(String jobId, RequestOptions requestOptions)"
+        },
+        "listJobs": {
+          "member": "jobs().list",
+          "method": "GET",
+          "path": "/v1/jobs",
+          "resource": "jobs()",
+          "signature": "public Void list()\npublic CompletableFuture<Void> listAsync()\npublic ApiResponse<Void> listWithResponse()\npublic CompletableFuture<ApiResponse<Void>> listWithResponseAsync()\npublic Void list(RequestOptions requestOptions)\npublic CompletableFuture<Void> listAsync(RequestOptions requestOptions)\npublic ApiResponse<Void> listWithResponse(RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> listWithResponseAsync(RequestOptions requestOptions)"
+        },
+        "listMembers": {
+          "member": "organizations().listMembers",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/members",
+          "resource": "organizations()",
+          "signature": "public Void listMembers(String organizationId)\npublic CompletableFuture<Void> listMembersAsync(String organizationId)\npublic ApiResponse<Void> listMembersWithResponse(String organizationId)\npublic CompletableFuture<ApiResponse<Void>> listMembersWithResponseAsync(String organizationId)\npublic Void listMembers(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<Void> listMembersAsync(String organizationId, RequestOptions requestOptions)\npublic ApiResponse<Void> listMembersWithResponse(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> listMembersWithResponseAsync(String organizationId, RequestOptions requestOptions)"
+        },
+        "listObservedBoxes": {
+          "member": "organizations().listObservedBoxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/observed-boxes",
+          "resource": "organizations()",
+          "signature": "public Map<String, Object> listObservedBoxes(String organizationId)\npublic CompletableFuture<Map<String, Object>> listObservedBoxesAsync(String organizationId)\npublic ApiResponse<Map<String, Object>> listObservedBoxesWithResponse(String organizationId)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> listObservedBoxesWithResponseAsync(String organizationId)\npublic Map<String, Object> listObservedBoxes(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<Map<String, Object>> listObservedBoxesAsync(String organizationId, RequestOptions requestOptions)\npublic ApiResponse<Map<String, Object>> listObservedBoxesWithResponse(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> listObservedBoxesWithResponseAsync(String organizationId, RequestOptions requestOptions)"
+        },
+        "listPersistentBoxOffers": {
+          "member": "organizations().listPersistentBoxOffers",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/offers",
+          "resource": "organizations()",
+          "signature": "public Map<String, Object> listPersistentBoxOffers(String organizationId)\npublic CompletableFuture<Map<String, Object>> listPersistentBoxOffersAsync(String organizationId)\npublic ApiResponse<Map<String, Object>> listPersistentBoxOffersWithResponse(String organizationId)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> listPersistentBoxOffersWithResponseAsync(String organizationId)\npublic Map<String, Object> listPersistentBoxOffers(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<Map<String, Object>> listPersistentBoxOffersAsync(String organizationId, RequestOptions requestOptions)\npublic ApiResponse<Map<String, Object>> listPersistentBoxOffersWithResponse(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> listPersistentBoxOffersWithResponseAsync(String organizationId, RequestOptions requestOptions)"
+        },
+        "listPersistentBoxes": {
+          "member": "organizations().listPersistentBoxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes",
+          "resource": "organizations()",
+          "signature": "public Map<String, Object> listPersistentBoxes(String organizationId)\npublic CompletableFuture<Map<String, Object>> listPersistentBoxesAsync(String organizationId)\npublic ApiResponse<Map<String, Object>> listPersistentBoxesWithResponse(String organizationId)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> listPersistentBoxesWithResponseAsync(String organizationId)\npublic Map<String, Object> listPersistentBoxes(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<Map<String, Object>> listPersistentBoxesAsync(String organizationId, RequestOptions requestOptions)\npublic ApiResponse<Map<String, Object>> listPersistentBoxesWithResponse(String organizationId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> listPersistentBoxesWithResponseAsync(String organizationId, RequestOptions requestOptions)\npublic Map<String, Object> listPersistentBoxes(String organizationId, Long limit)\npublic CompletableFuture<Map<String, Object>> listPersistentBoxesAsync(String organizationId, Long limit)\npublic ApiResponse<Map<String, Object>> listPersistentBoxesWithResponse(String organizationId, Long limit)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> listPersistentBoxesWithResponseAsync(String organizationId, Long limit)\npublic Map<String, Object> listPersistentBoxes(String organizationId, Long limit, RequestOptions requestOptions)\npublic CompletableFuture<Map<String, Object>> listPersistentBoxesAsync(String organizationId, Long limit, RequestOptions requestOptions)\npublic ApiResponse<Map<String, Object>> listPersistentBoxesWithResponse(String organizationId, Long limit, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> listPersistentBoxesWithResponseAsync(String organizationId, Long limit, RequestOptions requestOptions)"
+        },
+        "listUsers": {
+          "member": "admin().listUsers",
+          "method": "GET",
+          "path": "/v1/admin/users",
+          "resource": "admin()",
+          "signature": "public Void listUsers()\npublic CompletableFuture<Void> listUsersAsync()\npublic ApiResponse<Void> listUsersWithResponse()\npublic CompletableFuture<ApiResponse<Void>> listUsersWithResponseAsync()\npublic Void listUsers(RequestOptions requestOptions)\npublic CompletableFuture<Void> listUsersAsync(RequestOptions requestOptions)\npublic ApiResponse<Void> listUsersWithResponse(RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> listUsersWithResponseAsync(RequestOptions requestOptions)"
+        },
+        "listWaitlist": {
+          "member": "waitlist().list",
+          "method": "GET",
+          "path": "/v1/waitlist",
+          "resource": "waitlist()",
+          "signature": "public Void list()\npublic CompletableFuture<Void> listAsync()\npublic ApiResponse<Void> listWithResponse()\npublic CompletableFuture<ApiResponse<Void>> listWithResponseAsync()\npublic Void list(RequestOptions requestOptions)\npublic CompletableFuture<Void> listAsync(RequestOptions requestOptions)\npublic ApiResponse<Void> listWithResponse(RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> listWithResponseAsync(RequestOptions requestOptions)"
+        },
+        "openHostedWorkspace": {
+          "member": "workspaces().openHosted",
+          "method": "POST",
+          "path": "/v1/workspaces",
+          "resource": "workspaces()",
+          "signature": "public Void openHosted(Map<String, Object> body)\npublic CompletableFuture<Void> openHostedAsync(Map<String, Object> body)\npublic ApiResponse<Void> openHostedWithResponse(Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> openHostedWithResponseAsync(Map<String, Object> body)\npublic Void openHosted(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> openHostedAsync(Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> openHostedWithResponse(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> openHostedWithResponseAsync(Map<String, Object> body, RequestOptions requestOptions)\npublic Void openHosted(String idempotencyKey, Map<String, Object> body)\npublic CompletableFuture<Void> openHostedAsync(String idempotencyKey, Map<String, Object> body)\npublic ApiResponse<Void> openHostedWithResponse(String idempotencyKey, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> openHostedWithResponseAsync(String idempotencyKey, Map<String, Object> body)\npublic Void openHosted(String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> openHostedAsync(String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> openHostedWithResponse(String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> openHostedWithResponseAsync(String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "provisionPersistentBox": {
+          "member": "organizations().provisionPersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes",
+          "resource": "organizations()",
+          "signature": "public Void provisionPersistentBox(String organizationId, Map<String, Object> body)\npublic CompletableFuture<Void> provisionPersistentBoxAsync(String organizationId, Map<String, Object> body)\npublic ApiResponse<Void> provisionPersistentBoxWithResponse(String organizationId, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> provisionPersistentBoxWithResponseAsync(String organizationId, Map<String, Object> body)\npublic Void provisionPersistentBox(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> provisionPersistentBoxAsync(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> provisionPersistentBoxWithResponse(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> provisionPersistentBoxWithResponseAsync(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic Void provisionPersistentBox(String organizationId, String idempotencyKey, Map<String, Object> body)\npublic CompletableFuture<Void> provisionPersistentBoxAsync(String organizationId, String idempotencyKey, Map<String, Object> body)\npublic ApiResponse<Void> provisionPersistentBoxWithResponse(String organizationId, String idempotencyKey, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> provisionPersistentBoxWithResponseAsync(String organizationId, String idempotencyKey, Map<String, Object> body)\npublic Void provisionPersistentBox(String organizationId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> provisionPersistentBoxAsync(String organizationId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> provisionPersistentBoxWithResponse(String organizationId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> provisionPersistentBoxWithResponseAsync(String organizationId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "putFleetPolicy": {
+          "member": "organizations().putFleetPolicy",
+          "method": "PUT",
+          "path": "/v1/organizations/{organizationId}/fleet/policy",
+          "resource": "organizations()",
+          "signature": "public Void putFleetPolicy(String organizationId, Map<String, Object> body)\npublic CompletableFuture<Void> putFleetPolicyAsync(String organizationId, Map<String, Object> body)\npublic ApiResponse<Void> putFleetPolicyWithResponse(String organizationId, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> putFleetPolicyWithResponseAsync(String organizationId, Map<String, Object> body)\npublic Void putFleetPolicy(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> putFleetPolicyAsync(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> putFleetPolicyWithResponse(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> putFleetPolicyWithResponseAsync(String organizationId, Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "readTelemetry": {
+          "member": "admin().readTelemetry",
+          "method": "GET",
+          "path": "/v1/admin/telemetry",
+          "resource": "admin()",
+          "signature": "public Void readTelemetry()\npublic CompletableFuture<Void> readTelemetryAsync()\npublic ApiResponse<Void> readTelemetryWithResponse()\npublic CompletableFuture<ApiResponse<Void>> readTelemetryWithResponseAsync()\npublic Void readTelemetry(RequestOptions requestOptions)\npublic CompletableFuture<Void> readTelemetryAsync(RequestOptions requestOptions)\npublic ApiResponse<Void> readTelemetryWithResponse(RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> readTelemetryWithResponseAsync(RequestOptions requestOptions)"
+        },
+        "reconcilePersistentBox": {
+          "member": "organizations().reconcilePersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/reconcile",
+          "resource": "organizations()",
+          "signature": "public Map<String, Object> reconcilePersistentBox(String organizationId, String boxId, Map<String, Object> body)\npublic CompletableFuture<Map<String, Object>> reconcilePersistentBoxAsync(String organizationId, String boxId, Map<String, Object> body)\npublic ApiResponse<Map<String, Object>> reconcilePersistentBoxWithResponse(String organizationId, String boxId, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> reconcilePersistentBoxWithResponseAsync(String organizationId, String boxId, Map<String, Object> body)\npublic Map<String, Object> reconcilePersistentBox(String organizationId, String boxId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Map<String, Object>> reconcilePersistentBoxAsync(String organizationId, String boxId, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Map<String, Object>> reconcilePersistentBoxWithResponse(String organizationId, String boxId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> reconcilePersistentBoxWithResponseAsync(String organizationId, String boxId, Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "recoverHostedWorkspace": {
+          "member": "workspaces().recoverHosted",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/recover",
+          "resource": "workspaces()",
+          "signature": "public Void recoverHosted(String workspaceId, Map<String, Object> body)\npublic CompletableFuture<Void> recoverHostedAsync(String workspaceId, Map<String, Object> body)\npublic ApiResponse<Void> recoverHostedWithResponse(String workspaceId, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> recoverHostedWithResponseAsync(String workspaceId, Map<String, Object> body)\npublic Void recoverHosted(String workspaceId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> recoverHostedAsync(String workspaceId, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> recoverHostedWithResponse(String workspaceId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> recoverHostedWithResponseAsync(String workspaceId, Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "register": {
+          "member": "auth().register",
+          "method": "POST",
+          "path": "/v1/auth/register",
+          "resource": "auth()",
+          "signature": "public Void register(Map<String, Object> body)\npublic CompletableFuture<Void> registerAsync(Map<String, Object> body)\npublic ApiResponse<Void> registerWithResponse(Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> registerWithResponseAsync(Map<String, Object> body)\npublic Void register(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> registerAsync(Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> registerWithResponse(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> registerWithResponseAsync(Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "removeMember": {
+          "member": "organizations().removeMember",
+          "method": "DELETE",
+          "path": "/v1/organizations/{organizationId}/members/{userId}",
+          "resource": "organizations()",
+          "signature": "public Void removeMember(String organizationId, String userId)\npublic CompletableFuture<Void> removeMemberAsync(String organizationId, String userId)\npublic ApiResponse<Void> removeMemberWithResponse(String organizationId, String userId)\npublic CompletableFuture<ApiResponse<Void>> removeMemberWithResponseAsync(String organizationId, String userId)\npublic Void removeMember(String organizationId, String userId, RequestOptions requestOptions)\npublic CompletableFuture<Void> removeMemberAsync(String organizationId, String userId, RequestOptions requestOptions)\npublic ApiResponse<Void> removeMemberWithResponse(String organizationId, String userId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> removeMemberWithResponseAsync(String organizationId, String userId, RequestOptions requestOptions)"
+        },
+        "requestAccess": {
+          "member": "waitlist().requestAccess",
+          "method": "POST",
+          "path": "/v1/waitlist",
+          "resource": "waitlist()",
+          "signature": "public Void requestAccess(Map<String, Object> body)\npublic CompletableFuture<Void> requestAccessAsync(Map<String, Object> body)\npublic ApiResponse<Void> requestAccessWithResponse(Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> requestAccessWithResponseAsync(Map<String, Object> body)\npublic Void requestAccess(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> requestAccessAsync(Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> requestAccessWithResponse(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> requestAccessWithResponseAsync(Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "runHostedWorkspace": {
+          "member": "workspaces().runHosted",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/run",
+          "resource": "workspaces()",
+          "signature": "public Void runHosted(String workspaceId, Map<String, Object> body)\npublic CompletableFuture<Void> runHostedAsync(String workspaceId, Map<String, Object> body)\npublic ApiResponse<Void> runHostedWithResponse(String workspaceId, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> runHostedWithResponseAsync(String workspaceId, Map<String, Object> body)\npublic Void runHosted(String workspaceId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> runHostedAsync(String workspaceId, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> runHostedWithResponse(String workspaceId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> runHostedWithResponseAsync(String workspaceId, Map<String, Object> body, RequestOptions requestOptions)\npublic Void runHosted(String workspaceId, String idempotencyKey, Map<String, Object> body)\npublic CompletableFuture<Void> runHostedAsync(String workspaceId, String idempotencyKey, Map<String, Object> body)\npublic ApiResponse<Void> runHostedWithResponse(String workspaceId, String idempotencyKey, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> runHostedWithResponseAsync(String workspaceId, String idempotencyKey, Map<String, Object> body)\npublic Void runHosted(String workspaceId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> runHostedAsync(String workspaceId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> runHostedWithResponse(String workspaceId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> runHostedWithResponseAsync(String workspaceId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "startPersistentBox": {
+          "member": "organizations().startPersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/start",
+          "resource": "organizations()",
+          "signature": "public Map<String, Object> startPersistentBox(String organizationId, String boxId, Map<String, Object> body)\npublic CompletableFuture<Map<String, Object>> startPersistentBoxAsync(String organizationId, String boxId, Map<String, Object> body)\npublic ApiResponse<Map<String, Object>> startPersistentBoxWithResponse(String organizationId, String boxId, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> startPersistentBoxWithResponseAsync(String organizationId, String boxId, Map<String, Object> body)\npublic Map<String, Object> startPersistentBox(String organizationId, String boxId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Map<String, Object>> startPersistentBoxAsync(String organizationId, String boxId, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Map<String, Object>> startPersistentBoxWithResponse(String organizationId, String boxId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> startPersistentBoxWithResponseAsync(String organizationId, String boxId, Map<String, Object> body, RequestOptions requestOptions)\npublic Map<String, Object> startPersistentBox(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body)\npublic CompletableFuture<Map<String, Object>> startPersistentBoxAsync(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body)\npublic ApiResponse<Map<String, Object>> startPersistentBoxWithResponse(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> startPersistentBoxWithResponseAsync(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body)\npublic Map<String, Object> startPersistentBox(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Map<String, Object>> startPersistentBoxAsync(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Map<String, Object>> startPersistentBoxWithResponse(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> startPersistentBoxWithResponseAsync(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "stopBox": {
+          "member": "organizations().stopBox",
+          "method": "DELETE",
+          "path": "/v1/organizations/{organizationId}/boxes/{boxId}",
+          "resource": "organizations()",
+          "signature": "public Void stopBox(String organizationId, String boxId)\npublic CompletableFuture<Void> stopBoxAsync(String organizationId, String boxId)\npublic ApiResponse<Void> stopBoxWithResponse(String organizationId, String boxId)\npublic CompletableFuture<ApiResponse<Void>> stopBoxWithResponseAsync(String organizationId, String boxId)\npublic Void stopBox(String organizationId, String boxId, RequestOptions requestOptions)\npublic CompletableFuture<Void> stopBoxAsync(String organizationId, String boxId, RequestOptions requestOptions)\npublic ApiResponse<Void> stopBoxWithResponse(String organizationId, String boxId, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> stopBoxWithResponseAsync(String organizationId, String boxId, RequestOptions requestOptions)"
+        },
+        "stopPersistentBox": {
+          "member": "organizations().stopPersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/stop",
+          "resource": "organizations()",
+          "signature": "public Map<String, Object> stopPersistentBox(String organizationId, String boxId, Map<String, Object> body)\npublic CompletableFuture<Map<String, Object>> stopPersistentBoxAsync(String organizationId, String boxId, Map<String, Object> body)\npublic ApiResponse<Map<String, Object>> stopPersistentBoxWithResponse(String organizationId, String boxId, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> stopPersistentBoxWithResponseAsync(String organizationId, String boxId, Map<String, Object> body)\npublic Map<String, Object> stopPersistentBox(String organizationId, String boxId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Map<String, Object>> stopPersistentBoxAsync(String organizationId, String boxId, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Map<String, Object>> stopPersistentBoxWithResponse(String organizationId, String boxId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> stopPersistentBoxWithResponseAsync(String organizationId, String boxId, Map<String, Object> body, RequestOptions requestOptions)\npublic Map<String, Object> stopPersistentBox(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body)\npublic CompletableFuture<Map<String, Object>> stopPersistentBoxAsync(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body)\npublic ApiResponse<Map<String, Object>> stopPersistentBoxWithResponse(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> stopPersistentBoxWithResponseAsync(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body)\npublic Map<String, Object> stopPersistentBox(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Map<String, Object>> stopPersistentBoxAsync(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Map<String, Object>> stopPersistentBoxWithResponse(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> stopPersistentBoxWithResponseAsync(String organizationId, String boxId, String idempotencyKey, Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "stripeWebhook": {
+          "member": "billing().stripeWebhook",
+          "method": "POST",
+          "path": "/v1/billing/stripe/webhook",
+          "resource": "billing()",
+          "signature": "public Void stripeWebhook()\npublic CompletableFuture<Void> stripeWebhookAsync()\npublic ApiResponse<Void> stripeWebhookWithResponse()\npublic CompletableFuture<ApiResponse<Void>> stripeWebhookWithResponseAsync()\npublic Void stripeWebhook(RequestOptions requestOptions)\npublic CompletableFuture<Void> stripeWebhookAsync(RequestOptions requestOptions)\npublic ApiResponse<Void> stripeWebhookWithResponse(RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> stripeWebhookWithResponseAsync(RequestOptions requestOptions)"
+        },
+        "submitJob": {
+          "member": "jobs().submit",
+          "method": "POST",
+          "path": "/v1/jobs",
+          "resource": "jobs()",
+          "signature": "public Void submit(Map<String, Object> body)\npublic CompletableFuture<Void> submitAsync(Map<String, Object> body)\npublic ApiResponse<Void> submitWithResponse(Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> submitWithResponseAsync(Map<String, Object> body)\npublic Void submit(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> submitAsync(Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> submitWithResponse(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> submitWithResponseAsync(Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "syncObservedBoxes": {
+          "member": "organizations().syncObservedBoxes",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/observed-boxes/sync",
+          "resource": "organizations()",
+          "signature": "public Map<String, Object> syncObservedBoxes(String organizationId, Map<String, Object> body)\npublic CompletableFuture<Map<String, Object>> syncObservedBoxesAsync(String organizationId, Map<String, Object> body)\npublic ApiResponse<Map<String, Object>> syncObservedBoxesWithResponse(String organizationId, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> syncObservedBoxesWithResponseAsync(String organizationId, Map<String, Object> body)\npublic Map<String, Object> syncObservedBoxes(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Map<String, Object>> syncObservedBoxesAsync(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Map<String, Object>> syncObservedBoxesWithResponse(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Map<String, Object>>> syncObservedBoxesWithResponseAsync(String organizationId, Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "updateAuthGate": {
+          "member": "auth().updateGate",
+          "method": "PUT",
+          "path": "/v1/auth/gate",
+          "resource": "auth()",
+          "signature": "public Void updateGate(Map<String, Object> body)\npublic CompletableFuture<Void> updateGateAsync(Map<String, Object> body)\npublic ApiResponse<Void> updateGateWithResponse(Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> updateGateWithResponseAsync(Map<String, Object> body)\npublic Void updateGate(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> updateGateAsync(Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> updateGateWithResponse(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> updateGateWithResponseAsync(Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "updatePlan": {
+          "member": "admin().updatePlan",
+          "method": "POST",
+          "path": "/v1/admin/plans",
+          "resource": "admin()",
+          "signature": "public Void updatePlan(Map<String, Object> body)\npublic CompletableFuture<Void> updatePlanAsync(Map<String, Object> body)\npublic ApiResponse<Void> updatePlanWithResponse(Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> updatePlanWithResponseAsync(Map<String, Object> body)\npublic Void updatePlan(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> updatePlanAsync(Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> updatePlanWithResponse(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> updatePlanWithResponseAsync(Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "upsertMember": {
+          "member": "organizations().upsertMember",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/members",
+          "resource": "organizations()",
+          "signature": "public Void upsertMember(String organizationId, Map<String, Object> body)\npublic CompletableFuture<Void> upsertMemberAsync(String organizationId, Map<String, Object> body)\npublic ApiResponse<Void> upsertMemberWithResponse(String organizationId, Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> upsertMemberWithResponseAsync(String organizationId, Map<String, Object> body)\npublic Void upsertMember(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> upsertMemberAsync(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> upsertMemberWithResponse(String organizationId, Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> upsertMemberWithResponseAsync(String organizationId, Map<String, Object> body, RequestOptions requestOptions)"
+        },
+        "verifyLicense": {
+          "member": "auth().verifyLicense",
+          "method": "POST",
+          "path": "/v1/auth/verify",
+          "resource": "auth()",
+          "signature": "public Void verifyLicense(Map<String, Object> body)\npublic CompletableFuture<Void> verifyLicenseAsync(Map<String, Object> body)\npublic ApiResponse<Void> verifyLicenseWithResponse(Map<String, Object> body)\npublic CompletableFuture<ApiResponse<Void>> verifyLicenseWithResponseAsync(Map<String, Object> body)\npublic Void verifyLicense(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<Void> verifyLicenseAsync(Map<String, Object> body, RequestOptions requestOptions)\npublic ApiResponse<Void> verifyLicenseWithResponse(Map<String, Object> body, RequestOptions requestOptions)\npublic CompletableFuture<ApiResponse<Void>> verifyLicenseWithResponseAsync(Map<String, Object> body, RequestOptions requestOptions)"
+        }
+      },
+      "package_directory": "../BoxFleetHostedControlPlaneBoxfleetIoXe583ffd0d9dfSdk",
+      "package_manifest": "pom.xml",
+      "reference": "api.md",
+      "renderer": "java"
+    }
+  ]
+}

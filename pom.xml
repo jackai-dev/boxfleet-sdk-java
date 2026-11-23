@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>dev.omniwrap.generated</groupId>
+  <artifactId>boxfleet-hosted-control-plane-boxfleet-io-e583ffd0d9df-sdk</artifactId>
+  <version>0.3.0</version>
+  <description>Routes served by the boxfleet.io Worker. Default managed-connected deployments use JackAISaaS as the account, membership, subscription and billing authority. Product sessions must match the exact product, environment and organization. Managed features require explicit Hub entitlements and valid Hub quotas; neither local Stripe subscriptions nor local plan defaults can grant missing rights. Local issuer, plan mutations, membership mutations and Stripe billing routes are available only in explicitly selected autonomous modes; managed mode returns 409 account_authority_required with Hub account and portal URLs. Historical administrative reads are marked nonauthoritative. Job and organization records use PostgreSQL; missing storage answers 503. Hosted boxes need a configured provider. Hosted /v1/workspaces use tenant/product/environment ownership from current JackAISaaS product sessions, PostgreSQL lifecycle receipts and private source snapshots. Their finite lifetime is distinct from permanent VMs. Local CLI/MCP workspaces and synchronization remain separate workstation operations described in boxfleet.openapi.yaml. Removed simulation routes remain unavailable. tests/openapi-contract.test.mjs checks the complete route set in federated-autonomous mode; tests/account-authority.test.mjs checks managed refusals.</description>
+  <licenses><license><name>Proprietary</name></license></licenses>
+  <properties>
+    <maven.compiler.release>17</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <build>
+    <resources>
+      <resource>
+        <directory>${project.basedir}</directory>
+        <includes>
+          <include>api.md</include><include>agent-session.json</include><include>AGENT_SESSION.md</include>
+          <include>LICENSE</include>
+          <include>omniwrap-artifact.json</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+</project>
